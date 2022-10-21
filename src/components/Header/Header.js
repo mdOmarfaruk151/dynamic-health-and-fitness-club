@@ -1,6 +1,5 @@
 import React from "react";
 import logo from "../../images/fitness-logo.png";
-import QnA from "../QnA/QnA";
 import "./Header.css";
 
 const Header = () => {
