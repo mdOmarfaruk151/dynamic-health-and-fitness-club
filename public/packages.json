@@ -1,0 +1,63 @@
+[
+  {
+    "id": "1",
+    "category": "Men's Body Building",
+    "name": "Body Building",
+    "age":25,
+    "ratings": 4,
+    "time": 30,
+    "img": "http://www.silvergymbd.com/img/health-care-package/1.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "2",
+    "category": "Men's Fat Loss ()",
+    "name": "Fat Loss ()",
+    "age":25,
+    "ratings": 4,
+    "time": 35,
+    "img": "http://www.silvergymbd.com/img/health-care-package/2.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "3",
+    "category": "Females Yoga & Streching",
+    "name": "Yoga & Streching",
+    "age":25,
+    "ratings": 4,
+    "time": 40,
+    "img": "http://www.silvergymbd.com/img/health-care-package/3.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "4",
+    "category": "Females Weight Lifting",
+    "name": "Weight Lifting",
+    "age":25,
+    "ratings": 4,
+    "time": 25,
+    "img": "http://www.silvergymbd.com/img/health-care-package/4.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "5",
+    "category": "Men's Boxing Classes",
+    "name": "Boxing Classes",
+    "age":25,
+    "ratings": 4,
+    "time": 40,
+    "img": "http://www.silvergymbd.com/img/health-care-package/5.jpg",
+    "quantity": 0
+  },
+  {
+    "id": "6",
+    "category": "Females Dance Classes",
+    "name": "Dance Classes",
+    "age":25,
+    "ratings": 4,
+    "time": 30,
+    "img": "http://www.silvergymbd.com/img/health-care-package/6.jpg",
+    "quantity": 0
+  }
+  
+]
