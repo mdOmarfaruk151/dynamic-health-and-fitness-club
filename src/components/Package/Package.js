@@ -1,8 +1,13 @@
+// Font Awesome Icon Start
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import { faList } from "@fortawesome/free-solid-svg-icons";
+// Font Awesome Icon End
 import React from "react";
 import "./Package.css";
 
 const Package = (props) => {
-  const { name, img, forAge, time, age, ratings } = props.package;
+  const { name, img, time, age, ratings } = props.package;
+
   return (
     <div className="package">
       <img src={img} alt="images" />
@@ -27,8 +32,12 @@ const Package = (props) => {
           <br />
         </p>
       </div>
-      <button className="btn-cart">
-        <p>Add to list</p>
+      <button
+        onClick={() => props.handleAddToListClick(props.package)}
+        className="btn-cart"
+      >
+        <p className="btn-text">Add to list</p>
+        <FontAwesomeIcon icon={faList}></FontAwesomeIcon>
       </button>
     </div>
   );

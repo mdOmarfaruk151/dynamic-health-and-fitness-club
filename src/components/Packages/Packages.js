@@ -4,14 +4,22 @@ import './Packages.css';
 
 const Packages = () => {
     // data store
-  const [packages, setPackages] = useState([])
+  const [packages, setPackages] = useState([]);
+  const [list, setList] = useState([]);
+  
 // data load
 useEffect(()=>{
     fetch('packages.json')
     .then(res => res.json())
     .then(data => setPackages(data))
 }, [])
-
+// button to click
+const handleAddToListClick =() =>{
+//  console.log(packages)
+// array copy and add
+   const newList = [...list, packages];
+   setList(newList);
+}
     return (
        <div className='shop-container'>
         
@@ -20,13 +28,15 @@ useEffect(()=>{
         
             {
                 packages.map(packag=> <Package 
-                    package={packag}
                     key={packag.id}
+                    package={packag}
+                    handleAddToListClick={handleAddToListClick}
                 ></Package>)
             }
         </div>
         <div className="cart-container">
      <h2>Person Profile</h2>
+     <p>Selected List: {list.length}</p>
         </div>
        </div>
     );
