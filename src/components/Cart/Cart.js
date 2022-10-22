@@ -1,14 +1,14 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import "./Cart.css";
-import profile from ".//../../images/Md.-Omar-Faruk.jpg";
+import profile from ".//../../images/Md._Omar_Faruk.jpg";
 // Font Awesome Icon Start
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faLocationDot } from "@fortawesome/free-solid-svg-icons";
 // Font Awesome Icon End
-
 // React-Toastify
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
+
 // React-Toastify end
 
 const Cart = ({ list }) => {
@@ -25,6 +25,25 @@ const Cart = ({ list }) => {
       theme: "colored",
     });
   // React-Toastify end
+
+  // brack point start
+  const [time, setTime] = useState(0);
+  const handleButton = (t) => {
+    const breakTime = t.target.value;
+    setTime(breakTime);
+    localStorage.setItem("time", breakTime);
+  };
+
+  // get data from local storage
+  useEffect(() => {
+    const data = localStorage.getItem("time");
+    // here if data get then set if not then 0
+    data && setTime(data);
+  }, []);
+  // dynamic btn number set in the array
+  const btn = [10, 20, 30, 40, 50, 60];
+
+  // brack point end
 
   return (
     <div className="cart">
@@ -70,15 +89,27 @@ const Cart = ({ list }) => {
       <hr />
       <p className="p1">Add A Break</p>
 
-      <div className="time">dynamic</div>
+      <div className="time">
+        {/* button for break time */}
+        {btn.map((b, index) => (
+          <button
+            className="btn"
+            value={b}
+            onClick={(event) => handleButton(event)}
+            key={index}
+          >
+            {b} Min
+          </button>
+        ))}
+      </div>
       <hr />
       <p className="p1">Exercise Details</p>
       <p className="p2 time">Selected List: {list.length}</p>
       <div className="time">
-        <p className="p2">Exercise Time: 0 seconds </p>
+        <p className="p2">Exercise Time: 0 Minutes </p>
       </div>
       <div className="time">
-        <p className="p2">Break Time: 0 seconds</p>
+        <p className="p2">Break Time: {time} Minutes</p>
       </div>
       <hr />
       <button className="activity-btn" onClick={notify}>

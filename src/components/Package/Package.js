@@ -2,7 +2,6 @@
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faList } from "@fortawesome/free-solid-svg-icons";
 // Font Awesome Icon End
-import React from "react";
 import "./Package.css";
 
 const Package = (props) => {
@@ -36,7 +35,7 @@ const Package = (props) => {
         onClick={() => props.handleAddToListClick(props.package)}
         className="btn-cart"
       >
-        <p className="btn-text">Add to list</p>
+        <p className="btn-text">Add to List</p>
         <FontAwesomeIcon icon={faList}></FontAwesomeIcon>
       </button>
     </div>
