@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import Cart from '../Cart/Cart';
 import Package from '../Package/Package';
 import './Packages.css';
 
@@ -34,9 +35,10 @@ const handleAddToListClick =() =>{
                 ></Package>)
             }
         </div>
-        <div className="cart-container">
-     <h2>Person Profile</h2>
-     <p>Selected List: {list.length}</p>
+        <div className="list-container">
+     <Cart
+     list={list}
+     ></Cart>
         </div>
        </div>
     );
