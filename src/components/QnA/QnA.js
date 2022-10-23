@@ -17,6 +17,7 @@ const QnA = () => {
       <hr />
       <h1>QnA</h1>
       <hr />
+
       <hr />
       <h2>1. How Does React Work ?</h2>
       <hr />
@@ -46,13 +47,13 @@ const QnA = () => {
         <br />
         <ul>
           <li>
-            MyCounter> represents a variable called count whose value is a
+            MyCounter- represents a variable called count whose value is a
             numeric expression.
           </li>
           <li>
             GameScores is an object literal that has two prop-value pairs.
           </li>
-          <li>DashboardUnit> is the XML block that is rendered on the page.</li>
+          <li>DashboardUnit- is the XML block that is rendered on the page.</li>
           <li>
             scores=〈GameScores〉is the scores attribute. It gets its value from
             the GameScores object literal defined earlier.

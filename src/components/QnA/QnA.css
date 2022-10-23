@@ -6,6 +6,7 @@
   margin-right: 140px;
   margin-top: 50px;
   margin-bottom: 50px;
+  background-color: aliceblue;
 }
 .qna h2 {
   text-align: center;
@@ -43,4 +44,14 @@ td, th {
 
 tr:nth-child(even) {
   background-color: #dddddd;
+}
+
+@media screen and (min-width: 640px) {
+  .qna {
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 5px;
+    margin-bottom: 50px;
+    background-color: aliceblue;
+  }
 }

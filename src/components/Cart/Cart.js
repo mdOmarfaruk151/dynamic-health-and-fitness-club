@@ -1,4 +1,4 @@
-import React, {useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import "./Cart.css";
 import profile from ".//../../images/Md._Omar_Faruk.jpg";
 // Font Awesome Icon Start
@@ -11,9 +11,7 @@ import "react-toastify/dist/ReactToastify.css";
 import Time from "../Run Time/Time";
 
 // React-Toastify end
-const Cart = ({list}) => {
- 
-
+const Cart = ({ list }) => {
   // React-Toastify start
   const notify = () =>
     toast.success("Wow! Your Activity Completed!!", {
@@ -108,7 +106,9 @@ const Cart = ({list}) => {
       <p className="p1">Exercise Details</p>
       <p className="p2 time">Selected List: {list.length}</p>
       <div className="time">
-        <p className="p2"><Time list={list}></Time>   </p>
+        <p className="p2">
+          <Time list={list}></Time>{" "}
+        </p>
       </div>
       <div className="time">
         <p className="p2">Break Time: {times} Minutes</p>
