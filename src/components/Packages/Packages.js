@@ -21,6 +21,7 @@ const handleAddToListClick =() =>{
    const newList = [...list, packages];
    setList(newList);
 }
+
     return (
        <div className='shop-container'>
         
@@ -39,6 +40,7 @@ const handleAddToListClick =() =>{
      <Cart
      list={list}
      ></Cart>
+
         </div>
        </div>
     );

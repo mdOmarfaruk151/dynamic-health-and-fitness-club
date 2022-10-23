@@ -7,6 +7,8 @@ import "./Package.css";
 const Package = (props) => {
   const { name, img, time, age, ratings } = props.package;
 
+  // console.log(time)
+
   return (
     <div className="package">
       <img src={img} alt="images" />

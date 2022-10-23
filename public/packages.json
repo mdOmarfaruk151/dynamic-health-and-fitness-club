@@ -15,7 +15,7 @@
     "name": "Fat Loss ()",
     "age":25,
     "ratings": 4,
-    "time": 35,
+    "time": 30,
     "img": "http://www.silvergymbd.com/img/health-care-package/2.jpg",
     "quantity": 0
   },
@@ -25,7 +25,7 @@
     "name": "Yoga & Streching",
     "age":25,
     "ratings": 4,
-    "time": 40,
+    "time": 30,
     "img": "http://www.silvergymbd.com/img/health-care-package/3.jpg",
     "quantity": 0
   },
@@ -35,7 +35,7 @@
     "name": "Weight Lifting",
     "age":25,
     "ratings": 4,
-    "time": 25,
+    "time": 30,
     "img": "http://www.silvergymbd.com/img/health-care-package/4.jpg",
     "quantity": 0
   },
@@ -45,7 +45,7 @@
     "name": "Boxing Classes",
     "age":25,
     "ratings": 4,
-    "time": 40,
+    "time": 30,
     "img": "http://www.silvergymbd.com/img/health-care-package/5.jpg",
     "quantity": 0
   },
